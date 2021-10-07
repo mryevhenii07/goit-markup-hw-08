@@ -1,0 +1,28 @@
+.section__planning {
+  padding: 95px 0;
+  .planning__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.planning__items {
+  flex-basis: calc(100% / 4 - 30px);
+  .planning__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--third-text-color);
+    margin-bottom: 10px;
+  }
+  .planning__paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #757575;
+  }
+}

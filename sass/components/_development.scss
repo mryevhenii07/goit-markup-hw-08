@@ -1,0 +1,32 @@
+.section__development {
+  padding-bottom: 95px;
+}
+.development__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .development__items {
+    flex-basis: calc(100% / 3 - 30px);
+    position: relative;
+    z-index: -1;
+  }
+}
+.development__wrap-img {
+  position: relative;
+}
+.development__paragraph {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
