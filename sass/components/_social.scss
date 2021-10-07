@@ -1,52 +1,54 @@
-.cociality__list {
-  display: flex;
-  justify-content: center;
-}
-
-.social__item {
-  margin-left: 10px;
-  &:first-child {
-    margin-left: 0;
+@media screen and (min-width: 1200px) {
+  .cociality__list {
+    display: flex;
+    justify-content: center;
   }
-}
-.social__link {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-.main__cocial-link {
-  background-color: white;
-  fill: #afb1b8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: var(--primary-text-color);
-  }
-}
-.footer__social-link {
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background-color: var(--primary-text-color);
-  }
-}
 
-.main__cocial-link:hover .main__link-svg,
-.main__cocial-link:focus .main__link-svg {
-  fill: #ffffff;
-}
-.social__link-svg {
-  width: 20px;
-  height: 20px;
-}
-// .main-link-svg {
-//     fill: #afb1b8;
-//   }
+  .social__item {
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .social__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .main__cocial-link {
+    background-color: white;
+    fill: #afb1b8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--primary-text-color);
+    }
+  }
+  .footer__social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: var(--primary-text-color);
+    }
+  }
 
-.footer__link-svg {
-  fill: #ffffff;
+  .main__cocial-link:hover .main__link-svg,
+  .main__cocial-link:focus .main__link-svg {
+    fill: #ffffff;
+  }
+  .social__link-svg {
+    width: 20px;
+    height: 20px;
+  }
+  // .main-link-svg {
+  //     fill: #afb1b8;
+  //   }
+
+  .footer__link-svg {
+    fill: #ffffff;
+  }
 }
