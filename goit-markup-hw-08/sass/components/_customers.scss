@@ -2,8 +2,6 @@
   // padding-top: 95px;
   // padding-bottom: 95px;
   @media screen and (min-width: 480px) {
-    margin: 0 auto;
-    width: 480px;
     margin-top: 60px;
     margin-bottom: 60px;
   }
@@ -23,11 +21,9 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-grow: 1;
 }
 
 .costomers__item {
-  margin-bottom: 30px;
   // flex-basis: calc(100% / 6 - 30px);
 
   @media screen and (min-width: 480px) {
