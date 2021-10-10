@@ -190,6 +190,28 @@
   text-align: center;
 }
 
+.footer__section {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__section {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .logo-footer {
   color: var(--secender-text-color);
   display: block;

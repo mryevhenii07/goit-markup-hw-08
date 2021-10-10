@@ -11,11 +11,28 @@
 .footer__bock-info {
   text-align: center;
 }
+.footer__section {
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+}
 
 .footer__container {
   // display: flex;
   @media screen and (min-width: 480px) {
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   flex-wrap: nowrap;
+  // }
 }
 .logo-footer {
   color: var(--secender-text-color);
