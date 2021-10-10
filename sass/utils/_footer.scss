@@ -1,93 +1,137 @@
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-top: 95px;
-    padding-bottom: 95px;
-    background: #2f303a;
+.footer {
+  // padding-top: 95px;
+  // padding-bottom: 95px;
+  background: #2f303a;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-  .contact__footer {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 10px;
-    width: 203px;
+}
+
+.footer__bock-info {
+  text-align: center;
+}
+
+.footer__container {
+  // display: flex;
+  @media screen and (min-width: 480px) {
+  }
+}
+.logo-footer {
+  color: var(--secender-text-color);
+  // padding-bottom: 20px;
+  display: block;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__wrap-address {
+  font-style: normal;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
+}
+
+.contact__footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  // margin-bottom: 10px;
+  width: 203px;
+  display: block;
+  @media screen and (min-width: 480px) {
+    margin: 0 auto;
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.address {
+  color: #ffffff;
+}
+
+.footer__block-center {
+  // margin-left: 70px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer__paragraph {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+}
+
+.footer__form {
+  width: 100%;
+  // display: flex;
+  // justify-content: flex-end;
+}
+
+.footer__form-wrap {
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.form__title {
+  // display: flex;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
     display: block;
   }
-  .address {
-    color: #ffffff;
-  }
+}
 
-  .footer__wrap-address {
-    font-style: normal;
+.form__mail {
+  // width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  margin-right: 12px;
+  outline: none;
+  padding-left: 15px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.2;
+  @media screen and (min-width: 480px) {
+    width: 450px;
   }
-  .footer__container {
-    display: flex;
-  }
+}
 
-  .footer__block-center {
-    margin-left: 70px;
+.footer__form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 200px;
+  background-color: var(--primary-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--secender-text-color);
+  margin-top: 36px;
+  border: none;
+  cursor: pointer;
+  @media screen and (min-width: 480px) {
+    margin: 0 auto;
   }
-
-  .footer__paragraph {
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: #ffffff;
-  }
-
-  // .footer-social-item-link {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   width: 100%;
-  //   height: 100%;
-  // }
-
-  .footer__form {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .form__title {
-    display: flex;
-  }
-  .form__mail {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background: #2f303a;
-    margin-right: 12px;
-    outline: none;
-    padding-left: 15px;
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 1.2;
-  }
-
-  .footer__form-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 200px;
-    background-color: var(--primary-text-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: var(--secender-text-color);
-    margin-top: 36px;
-    border: none;
-    cursor: pointer;
-  }
-  .footer__form-svg {
-    fill: var(--secender-text-color);
-  }
-  .form__wrap-btn {
-    margin-left: 10px;
-  }
+}
+.footer__form-svg {
+  fill: var(--secender-text-color);
+}
+.form__wrap-btn {
+  margin-left: 10px;
 }
