@@ -1123,6 +1123,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio__container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .portfolio__list-nav {
     display: -webkit-box;
@@ -1208,6 +1215,15 @@ body {
   }
   .portfolio__card-items:nth-child(odd) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__card-items {
+    margin-right: 30px;
+  }
+  .portfolio__card-items:nth-child(3n + 3) {
+    margin-right: 0;
   }
 }
 
