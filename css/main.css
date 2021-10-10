@@ -1156,22 +1156,13 @@ body {
   border: none;
 }
 
-.portfolio__card-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-}
-
-.portfolio__card-items {
-  width: calc(100% / 3 - 20px);
-}
-
 .portfolio__card-items:hover, .portfolio__card-items:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.partfolio__card-img {
+  width: 100%;
 }
 
 .portfolio__card-items:hover .portfolio__card-paragraphs {
