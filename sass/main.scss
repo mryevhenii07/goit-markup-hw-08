@@ -1,8 +1,8 @@
-@import "utils/variables";
+@import "./utils/variables";
 @import "./utils/header";
 @import "./utils/footer";
-@import "components/logo";
-@import "base/base";
+@import "./components/logo";
+@import "./base/base";
 @import "./components/modal";
 @import "./components/social";
 
@@ -13,4 +13,3 @@
 @import "./components/planning";
 @import "./components/command";
 @import "./utils/partfolio";
-@import "./utils/-breakpoints.scss";
