@@ -1023,22 +1023,19 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 480px) {
-  .section__development {
-    display: none;
-  }
+.section__development {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
   .section__development {
+    width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding-bottom: 95px;
     margin-top: 95px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .development__list {
-    display: none;
   }
 }
 
@@ -1053,12 +1050,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .development__items {
-    display: none;
   }
 }
 
@@ -1077,21 +1068,23 @@ body {
   }
 }
 
-.development__items .development__paragraph {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: rgba(47, 48, 58, 0.8);
+@media screen and (min-width: 1200px) {
+  .development__items .development__paragraph {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1103,17 +1096,56 @@ body {
   }
 }
 
-.section__planning .planning__list {
+@media screen and (min-width: 768px) {
+  .section__planning {
+    width: 768px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__planning {
+    width: 1200px;
+    padding: 95px 0;
+  }
+}
+
+.planning__list {
   margin-bottom: 30px;
 }
 
-.section__planning .planning__list:last-child {
+.planning__list:last-child {
   margin-bottom: 0;
 }
 
 @media screen and (min-width: 480px) {
-  .section__planning .planning__list {
+  .planning__list {
     width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .planning__list {
+    width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .planning__list {
+    width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1126,22 +1158,45 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .planning__items {
+    width: calc(100% / 2 - 5px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .planning__items {
+    -ms-flex-preferred-size: calc(100% / 4 - 15px);
+        flex-basis: calc(100% / 4 - 15px);
+  }
+}
+
 @media screen and (min-width: 480px) {
-  .planning__items .planning__wrap-img {
+  .planning__wrap-img {
     width: 450px;
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .planning__items .planning__wrap-img .planning__img {
-    width: 450px;
-    background-color: #f5f4fa;
-    height: 120px;
+@media screen and (min-width: 768px) {
+  .planning__wrap-img {
+    width: 354px;
   }
 }
 
-.planning__items .planning__title {
+@media screen and (min-width: 1200px) {
+  .planning__wrap-img {
+    width: 270px;
+  }
+}
+
+.planning__img {
+  height: 120px;
+  width: 100%;
+  background-color: #f5f4fa;
+}
+
+.planning__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1151,12 +1206,12 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  .planning__items .planning__title {
+  .planning__title {
     text-align: center;
   }
 }
 
-.planning__items .planning__paragraph {
+.planning__paragraph {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
