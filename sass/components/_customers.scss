@@ -20,6 +20,11 @@
 }
 
 .costomers__list {
+  @media screen and (max-width: 479px) {
+    display: flex;
+    justify-content: center;
+  }
+
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

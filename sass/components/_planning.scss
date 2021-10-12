@@ -1,4 +1,9 @@
 .section__planning {
+  @media screen and (max-width: 479px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
   @media screen and (min-width: 480px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -36,6 +41,14 @@
 }
 
 .planning__items {
+  @media screen and (max-width: 479px) {
+    text-align: center;
+    margin-bottom: 35px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   @media screen and (min-width: 480px) {
     margin-bottom: 30px;
     &:last-child {
@@ -52,6 +65,10 @@
 // flex-basis: calc(100% / 4 - 30px);
 
 .planning__wrap-img {
+  @media screen and (max-width: 479px) {
+    margin-bottom: 20px;
+  }
+
   @media screen and (min-width: 480px) {
     width: 450px;
     margin-bottom: 30px;

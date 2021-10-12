@@ -1,6 +1,9 @@
 .section__command {
   background: #f5f4fa;
-
+  @media screen and (max-width: 479px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   @media screen and (min-width: 480px) {
     width: 480px;
     padding-bottom: 60px;
