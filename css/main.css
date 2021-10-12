@@ -9,24 +9,26 @@
   padding-right: 15px;
   margin: 0 auto;
   border-bottom: 1px solid #ececec;
-  height: 80px;
 }
 
 @media screen and (min-width: 480px) {
   .header {
     width: 480px;
+    height: 60px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .header {
     width: 768px;
+    height: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header {
     width: 1200px;
+    height: 80px;
   }
 }
 
@@ -39,6 +41,20 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__container {
+    width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+    background-color: white;
   }
 }
 
@@ -57,31 +73,205 @@
   }
 }
 
-.header__contacts {
-  display: none;
-}
-
-.header__nav {
-  height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    height: 100%;
+  }
 }
 
 .header__nav-list {
   display: none;
 }
 
-.header__nav-item {
-  margin-left: 50px;
-  width: 78px;
+@media screen and (min-width: 768px) {
+  .header__nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin-left: 88px;
+  }
 }
 
-.header__nav-item:first-child {
-  margin-left: 0;
+@media screen and (min-width: 1200px) {
+  .header__nav-list {
+    margin-left: 95px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav-item {
+    margin-left: 5px;
+    width: 78px;
+  }
+  .header__nav-item:first-child {
+    margin-left: 0;
+  }
+  .header__nav-item:last-child {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__nav-item {
+    margin-left: 50px;
+    height: 90px;
+  }
+  .header__nav-item:last-child {
+    margin-left: 79px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--third-text-color);
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__nav-link:hover,
+  .header__nav-link :focus {
+    color: var(--primary-text-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__nav-link {
+    height: 80px;
+  }
+}
+
+.active-portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.active-portfolio:after {
+  content: "";
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 68px;
+  height: 4px;
+  background-color: var(--primary-text-color);
+  border-radius: 2px;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.active:after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  background: var(--primary-text-color);
+  border-radius: 2px;
+}
+
+.header__contacts {
+  display: none;
+  margin-top: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__contacts {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0;
+  }
+}
+
+.contacts__list-mail:hover,
+.contacts__list-mail :focus {
+  fill: var(--primary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list-mail {
+    margin-right: 30px;
+  }
+}
+
+.contacts__link {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.14;
+    color: #757575;
+    fill: #757575;
+  }
+}
+
+.contacts__link:hover,
+.contacts__link :focus {
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .header-phone-letter {
+    margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-phone-letter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10px;
+  }
+}
+
+.header-phone-lette {
+  width: 480px;
 }
 
 .footer {
@@ -324,13 +514,22 @@
   margin-left: 10px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (min-width: 480px) {
   .logo {
     font-family: "Raleway", sans-serif;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
   }
+}
+
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .logo {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .logo__color {
     color: var(--primary-text-color);
   }
@@ -1413,8 +1612,8 @@ body {
     padding-left: 40px;
     padding-right: 83px;
     margin-bottom: 62px;
-    z-index: 99999;
-    opacity: 1;
+    z-index: 2;
+    opacity: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1435,7 +1634,8 @@ body {
 }
 
 .is-open {
-  display: none;
+  opacity: 1;
+  pointer-events: none;
 }
 
 .header__modal-contacts {

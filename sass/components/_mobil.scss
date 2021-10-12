@@ -12,8 +12,8 @@
     padding-left: 40px;
     padding-right: 83px;
     margin-bottom: 62px;
-    z-index: 99999;
-    opacity: 1;
+    z-index: 2;
+    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,19 +22,21 @@
     display: none;
   }
 }
+
 .is-open {
-  display: none;
+  opacity: 1;
+  pointer-events: none;
 }
 .header__modal-contacts {
   margin-bottom: 60px;
 }
+
 .header__modal-link {
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
   text-align: center;
   letter-spacing: 0.02em;
-
   color: #212121;
   &:hover {
     color: #2196f3;
