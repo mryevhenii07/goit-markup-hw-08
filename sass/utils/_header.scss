@@ -4,6 +4,10 @@
   margin: 0 auto;
   border-bottom: 1px solid #ececec;
 
+  @media screen and (max-width: 480px) {
+    min-width: 479px;
+    height: 60px;
+  }
   @media screen and (min-width: 480px) {
     width: 480px;
     height: 60px;
@@ -32,10 +36,17 @@
     justify-content: space-between;
     text-align: center;
     background-color: white;
+    border-bottom: 1px solid #ececec;
   }
 }
 
 .header__nav {
+  height: 60px;
+  @media screen and (max-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   @media screen and (min-width: 480px) {
     // position: relative;
     height: 60px;
